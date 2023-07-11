@@ -1,13 +1,233 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lora', serif;
+font-family: 'Righteous', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar1{
+ 
 }
+
+.navbar1-div1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar1-div1 h1{
+margin:10px auto ;
+}
+
+.navbar1-div1 input{
+  width: 30rem;
+  height: 2rem;
+  text-align: center;
+  margin:10px auto;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(60, 54, 54);
+}
+
+.section1{
+  width: 80vw;
+  margin: auto;
+}
+
+.section1 h1{
+  margin: 30px;
+}
+
+.section1-container1{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card-container{
+  width: 225px;
+  display: inline-block;
+  margin: 40px;
+  border: 2px solid black;
+  box-shadow: 20px 20px 60px rgb(184, 157, 157);
+  padding: 3px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+.card-container:hover{
+  transition: 2s;
+  transform: scale(0.8);
+}
+
+.card-div{
+  display: flex;
+  flex-direction: column;
+
+}
+.card-div img{
+  width: 100%;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.title-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.title-div h3{
+  text-align: center;
+  margin-top: 10px;
+}
+.title-div h5{
+  text-align: center;
+  margin-top: 5px;
+}
+
+.detail-div{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top:0px;
+  left: 0px;
+  right:0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(83, 76, 76);
+}
+.detail-div1{
+border: 2px solid black;
+width: 50%;
+height: 80vh;
+margin: auto;
+border-radius: 10px;
+box-shadow: 10px 10px 20px rgb(125, 115, 102);
+overflow: scroll;
+}
+.detail-div2{
+display: flex;
+gap: 30px;
+}
+.detail-div3{
+padding: 20px;
+}
+
+.detail-div2 img{
+  margin: 10px;
+  width: 30%;
+  height: 40vh;
+}
+
+.detail-div1 p{
+  margin: 10px;
+  text-align: justify;
+}
+
+.detail-div3 h4{
+  margin-top: 20px;
+}
+.detail-div3 a{
+  display: block;
+  margin-top: 15px;
+
+}
+.detail-div3 button{
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: rgb(72, 72, 172);
+  font-size: 1rem;
+}
+
+.detail-div .cut{
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navbar-1{
+  background-color: rgb(231, 222, 222);
+  position: sticky;
+  top:0px;
+  box-shadow: 0px 20px -60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-1 div{
+  margin: 30px 60px;
+  display: inline-flex;
+  gap:10px;
+}
+.navbar-1 ul{
+  display: flex;
+  list-style: none;
+  color: white;
+  margin: 0px 60px;
+}
+.navbar-1 li{
+  margin: 30px;
+  list-style: none;
+
+}
+.navbar-1 .linkitem{
+  color: rgb(130, 113, 113);
+  text-decoration: none;
+}
+
+.navbar-1 .linkitem.active {
+  text-decoration: underline;
+}
+
+
+.navbar-1 .linkitem:hover {
+  text-decoration: underline;
+}
+
+
+.movie-section input{
+  width: 30rem;
+  height: 2rem;
+  text-align: center;
+  margin:10px auto;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(60, 54, 54);
+}
+.news-card-container{
+  width: 300px;
+  display: inline-block;
+  margin: 40px;
+  border: 2px solid black;
+  box-shadow: 20px 20px 60px rgb(184, 157, 157);
+  padding: 3px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+.news-card-div{
+  display: flex;
+  flex-direction: column;
+
+}
+.news-card-div img{
+  width: 100%;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.news-card-div a{
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(96, 96, 187);
+}
+
+
+

@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./index.css";
+import Book from "./component/book_component/Book";
+import Navbar from "./component/common_component/Navbar";
+import Movie from "./component/movie_component/Movie";
+import NotFound from "./component/common_component/NotFound";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Gossips from "./component/gossips_component/Gossips";
+import Tvshow from "./component/tvshow_component/Tvshow";
+import Anime from "./component/anime_component/Anime";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+  
+  <Navbar />
+     <Routes>
+      <Route exact path="/" element={<Movie />} />
+      <Route exact path="/tvshow" element={<Tvshow />} />
+      <Route exact path="/anime" element={<Anime/>} />
+      <Route path="/book" element={<Book />} />
+      <Route path="/gossips" element={<Gossips />} />
+      <Route  element={<NotFound />} />
+    </Routes>
+   </>
   );
 }
 
